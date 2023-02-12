@@ -1,0 +1,174 @@
+
+@font-face {
+  font-family: 'CookieFont';
+  src: url('../../assets/Cookie-Regular.ttf'); 
+}
+
+.box {
+  position: absolute;
+  background-color: rgba(#000, 0.5);
+  width: 100%;
+  padding: 3px;
+  border: 3px solid #b78846;
+  border-radius: 3%;
+}
+.box:after {
+  content: "•";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  color: #b78846;
+  border: 2px solid #b78846;
+  line-height: 12px;
+  top: 3px;
+  text-align: center;
+}
+.box:after {
+  left: 3px;
+}
+
+  
+.boxInnerUp {
+  position: relative;
+  border: 0;
+  }
+
+.boxInnerUp:after {
+    content: "•";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #b78846;
+    border: 2px solid #b78846;
+    line-height: 12px;
+    top: 0px;
+    text-align: center;
+  }
+
+.boxInnerUp:after {
+  right: 0px;
+}
+
+
+.boxInnerDown {
+  position: relative;
+  border: 2px solid #b78846;
+  height: 99% !important;
+}
+
+.boxInnerDown:before, .boxInnerDown:after {
+    content: "•";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #b78846;
+    border: 2px solid #b78846;
+    line-height: 12px;
+    bottom: -2px;
+    text-align: center;
+}
+
+
+.boxInnerDown:before {
+  left: -2px;
+  }
+.boxInnerDown:after {
+  right: -2px;
+}
+  
+
+
+.optionButtons {
+height: 8vh;
+display: flex;
+justify-content: center;
+position: relative
+}
+
+canvas{
+    margin-bottom: -3px;
+    aspect-ratio : 1 / 1;
+    cursor: url('../../assets/coin.png'), auto;	
+}
+
+#btn {
+    background: #222;
+    height: 8vh;
+    width: 11vw;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'CookieFont', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+    float:left;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    top: -55%;
+  }
+  
+  #btn #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+  
+  #btn:hover {
+    background: transparent;
+  }
+  
+  #btn:hover #circle {
+    height: 8vh;
+    width: 11vw;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+  }
+
+
+  #btn:hover{
+    color: #222;
+  }
+
+  
+@media screen and (max-width: 500px) {
+
+  #btn {
+    top: 10%;
+    height: 4vh;
+    width: 11vw;
+  }
+
+  #btn:hover #circle {
+     
+      height: 4vh;
+      width: 11vw;
+  }
+
+  }
