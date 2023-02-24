@@ -30,14 +30,14 @@ const Main = (props) => {
 
     const [isFlipped, setFlipImage] = useState(false);
 
-        
+    /*
     useEffect(() => {
          const flipAction = setInterval(() => setFlipImage(!isFlipped), 15000);
         return () => {
             clearInterval(flipAction);
         };
       });
-
+    */
 
 
 
@@ -64,7 +64,7 @@ const Main = (props) => {
             <div className={styles.icons}>
                 <Link to="https://github.com/zomsik" target="_blank"> <Image src={require('../../assets/github.png')} className={styles.icon} /></Link>
                 <Link to="https://www.linkedin.com/in/tomasz-wiejak/" target="_blank"> <Image src={require('../../assets/linkedin.png')} className={styles.icon} /></Link>
-                <Link to="" onClick={() => window.location = 'mailto:tomaszwiejak00@gmail.com'}> <Image src={require('../../assets/mail.png')} className={styles.icon} /></Link>
+                <a href='mailto:tomaszwiejak00@gmail.com'> <Image src={require('../../assets/mail.png')} className={styles.icon} /></a> 
             </div>
             </div>
         

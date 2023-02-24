@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom"
 import { Image } from 'react-bootstrap';
 import styles from './styles.module.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense  } from 'react';
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from 'react-i18next';
-import Scratch from "../Scratch";
+
 
 const Summary = (props) => {
+
+    const Scratch = React.lazy(() => import("../Scratch"));
+
+
 
     const { t } = useTranslation();
 
@@ -53,10 +57,15 @@ const Summary = (props) => {
 
             <div className={styles.right}>
                 <div className={styles.scratchContainer}>
+                <Suspense fallback={<div><Image src={require('../../assets/loading.gif')} className={styles.loading} /></div>}>
                         <div className={styles.scratch}>
-                            <Scratch/>
+                            
+                            
+				            <Scratch />
+			                
                         </div>
                         <Image src={require('../../assets/stack.png')} className={styles.underImage} />
+                        </Suspense>
                 </div>
             </div>
         </div>

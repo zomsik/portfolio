@@ -25,7 +25,7 @@ const Scratch = () => {
         canvas.style.height = "100%";
         canvas.width = canvas.offsetWidth;
         canvas.height = canvas.offsetHeight;
-
+        
         const ctx = canvas.getContext("2d");
 
         ctx.scale(1, 1);
