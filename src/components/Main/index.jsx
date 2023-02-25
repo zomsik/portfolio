@@ -4,8 +4,8 @@ import styles from './styles.module.css';
 import { useTranslation } from 'react-i18next';
 import React, { useState, useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
-import frontImage from "../../assets/placeholder.png"
-import backImage from "../../assets/placeholder3.png"
+import frontImage from "../../assets/frontImage.jpg"
+import backImage from "../../assets/backImage.jpg"
 
 import ReactCardFlip from 'react-card-flip';
 
@@ -51,9 +51,9 @@ const Main = (props) => {
 
             <ReactCardFlip isFlipped={isFlipped} infinite={true} flipSpeedFrontToBack={2} flipSpeedBackToFront={2}  >
 
-            <Image onClick={() => {setFlipImage(!isFlipped)}} className={` ${styles.image}  ${styles.front} `} src={frontImage} />
+            <Image onClick={() => {setFlipImage(!isFlipped)}} className={styles.image} src={frontImage} />
       
-            <Image onClick={() => {setFlipImage(!isFlipped)}} className={` ${styles.image}  ${styles.back} `} src={backImage}  /> 
+            <Image onClick={() => {setFlipImage(!isFlipped)}} className={styles.image} src={backImage}  /> 
    
 
             </ReactCardFlip>

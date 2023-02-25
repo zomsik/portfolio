@@ -45,6 +45,7 @@ html {
 	border-radius: 15% / 30%;
 }
 
+
 .image {
 	margin-left: 8%;
 	margin-top: 8%;
@@ -54,6 +55,7 @@ html {
 	width:80%;
 	cursor: pointer;
 }
+
 
 .left {
 	float:left;
