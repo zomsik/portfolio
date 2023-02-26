@@ -8,6 +8,7 @@ import frontImage from "../../assets/frontImage.jpg"
 import backImage from "../../assets/backImage.jpg"
 
 import ReactCardFlip from 'react-card-flip';
+import { wait } from "@testing-library/user-event/dist/utils";
 
 
 const Main = (props) => {
@@ -30,14 +31,24 @@ const Main = (props) => {
 
     const [isFlipped, setFlipImage] = useState(false);
 
-    /*
-    useEffect(() => {
-         const flipAction = setInterval(() => setFlipImage(!isFlipped), 15000);
-        return () => {
-            clearInterval(flipAction);
-        };
-      });
-    */
+     useEffect(() => {
+        let startTime = null;
+    
+        function updateValue(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const elapsedTime = timestamp - startTime;
+          if (elapsedTime >= 8000) {
+            setFlipImage(prevValue => !prevValue);
+            
+            startTime = timestamp;
+          }
+          requestAnimationFrame(updateValue);
+        }
+    
+        requestAnimationFrame(updateValue);
+    
+        return () => cancelAnimationFrame(updateValue);
+      }, []);
 
 
 
@@ -48,7 +59,6 @@ const Main = (props) => {
    
         <div className={styles.innerContainer}>
             <div className={styles.left}>
-
             <ReactCardFlip isFlipped={isFlipped} infinite={true} flipSpeedFrontToBack={2} flipSpeedBackToFront={2}  >
 
             <Image onClick={() => {setFlipImage(!isFlipped)}} className={styles.image} src={frontImage} />

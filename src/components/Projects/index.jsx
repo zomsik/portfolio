@@ -46,7 +46,9 @@ const Projects = (props) => {
 
       <Swiper 
         style={{
-          "--swiper-navigation-size": "7vw"
+          "--swiper-navigation-size": "7vw",
+          "--swiper-navigation-color": "black",
+          "--swiper-navigation-sides-offset": "2vw"
         }}
 
         navigation={true}
@@ -56,7 +58,7 @@ const Projects = (props) => {
         modules={[Navigation, Keyboard]}
         className="mySwiper">
 
-        <SwiperSlide><Project setActiveSection={props.setActiveSection} project={project1} download="https://drive.google.com/u/0/uc?id=1vqoZ8zdhXwysp8hUJm1gce_xpaSdJDoU&export=download" /></SwiperSlide>
+        <SwiperSlide><Project setActiveSection={props.setActiveSection} project={project1} github="https://github.com/zomsik/Unconquered-Fortress" download="https://drive.google.com/u/0/uc?id=1vqoZ8zdhXwysp8hUJm1gce_xpaSdJDoU&export=download" /></SwiperSlide>
         <SwiperSlide><Project setActiveSection={props.setActiveSection} project={project2} github="https://github.com/zomsik/ReactWebClientApp" live="https://zomsik.github.io/ReactWebClientApp/"/></SwiperSlide>
       </Swiper>
 

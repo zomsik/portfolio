@@ -12,7 +12,7 @@ html {
 	font-family: 'Open Sans';
 	font-size: 50px;
 	font-weight: 600;
-	background-image: linear-gradient(to left, #6f3ef8, #437bf3);
+	background-image: linear-gradient(to left, #7d51f3 50%, #4643f3);
 	color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -39,7 +39,7 @@ html {
 .innerContainer {
 	width: 80%;
 	height: 80vh;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.6);
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	
 	border-radius: 15% / 30%;

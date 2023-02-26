@@ -48,8 +48,8 @@ const Project = (props) => {
         
 
         <div ref={visibleProjects} className={styles.icons}>
-        {props.download ? <Link to={props.download} target="_blank" > <Image src={require('../../assets/download2.png')} className={styles.icon} /></Link> : ""}
         {props.github ? <Link to={props.github} target="_blank"> <Image src={require('../../assets/github2.png')} className={styles.icon} /></Link> : ""}
+        {props.download ? <Link to={props.download} target="_blank" > <Image src={require('../../assets/download2.png')} className={styles.icon} /></Link> : ""}
         {props.live ? <Link to={props.live} target="_blank"> <Image src={require('../../assets/lupa.png')} className={styles.icon} /></Link> : ""}
         </div>
 

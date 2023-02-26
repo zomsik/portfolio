@@ -9,15 +9,16 @@ export const NavbarContainer = styled.nav`
 	padding: 0.7rem 2rem;
 	overflow: hidden;
 	z-index: 10;
-  border-radius: 60px;
-  box-shadow: 3px 3px 20px #ff3352;
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  background-color: rgba(172, 89, 252, 1);
-  background-image: linear-gradient(167deg, rgba(172, 89, 252, 1) 0%, rgba(41, 53, 86, 1) 33%, rgba(30, 25, 35, 1) 66%, rgba(37, 2, 57, 1) 90%);
-	margin: auto;
-	top: 10px;
-	right:10px;
+  box-shadow: 3px 3px 20px gray;
+  border-bottom-left-radius: 60px;
+  background-color: rgba(28, 32, 90, 1);
+  background-image: linear-gradient(166deg, rgba(24, 179, 235, 1) 0%, rgba(52, 107, 115, 1) 25%, rgba(16, 181, 134, 1) 50%, rgba(0, 132, 158, 1) 75%, rgba(58, 98, 214, 1) 100%);
+
+
+
+  margin: auto;
+	top: 0;
+	right:0;
 
   
 
