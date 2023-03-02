@@ -9,12 +9,9 @@ export const NavbarContainer = styled.nav`
 	padding: 0.7rem 2rem;
 	overflow: hidden;
 	z-index: 10;
-  box-shadow: 3px 3px 20px gray;
+  box-shadow: 3px 3px 20px black;
   border-bottom-left-radius: 60px;
-  background-color: rgba(28, 32, 90, 1);
-  background-image: linear-gradient(166deg, rgba(24, 179, 235, 1) 0%, rgba(52, 107, 115, 1) 25%, rgba(16, 181, 134, 1) 50%, rgba(0, 132, 158, 1) 75%, rgba(58, 98, 214, 1) 100%);
-
-
+  background-color: #99c9e2;
 
   margin: auto;
 	top: 0;
@@ -56,6 +53,9 @@ export const NavbarLink = styled.a`
   margin: 10px;
   margin-top: 0.5vh;
   width: 100%;
+  color: gray;
+  font-weight: 600;
+  
   
   
 
@@ -65,7 +65,7 @@ export const NavbarLink = styled.a`
 
   &:hover {
     transition: 0.5s;
-    color: orange;
+    color: #023E8A;
     cursor: pointer;
   }
 
@@ -77,13 +77,12 @@ export const NavbarLink = styled.a`
 export const NavbarLinkExtended = styled.a`
   color: white;
   font-size: x-large;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
 
   &:hover {
     transition: 0.5s;
-    color: orange;
+    color: #023E8A;
   }
 `;
 

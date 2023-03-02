@@ -12,19 +12,19 @@ html {
 	font-family: 'Open Sans';
 	font-size: 50px;
 	font-weight: 600;
-	background-image: linear-gradient(to left, #7d51f3 50%, #4643f3);
-	color: transparent;
+	font-family: 'Roboto', sans-serif;
+	color: #3d348b;
 	background-clip: text;
 	-webkit-background-clip: text;
-	
+
 }
 
 .desc {
 	margin-top: 5%;
 	margin-left: 3%;
-	font-family: 'Open Sans';
 	font-size: 2vw;
 	text-indent: 1.5em;
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -39,7 +39,7 @@ html {
 .innerContainer {
 	width: 80%;
 	height: 80vh;
-	background-color: rgba(255,255,255,0.6);
+	background-color: #99c9e2;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	
 	border-radius: 15% / 30%;
@@ -111,7 +111,7 @@ html {
 .scrollPanel {
 	width:3%;
 	position: absolute;
-	bottom: 15%;
+	bottom: 12%;
 	left: 48.5%;
 	display: flex;
 	justify-content: center;

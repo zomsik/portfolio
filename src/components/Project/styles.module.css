@@ -42,8 +42,9 @@
 	font-family: 'Open Sans';
 	font-size: 4em;
 	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
+	color: #3d348b;
 	margin-top: 10px;
-	color: rgb(16, 47, 182);
 	background-clip: text;
 	-webkit-background-clip: text;
 	text-indent: 10%;
@@ -54,7 +55,7 @@
 .desc {
 	margin-top: 2%;
 	margin-left: 3%;
-	font-family: 'Open Sans';
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.6vw;
 	text-indent: 1.5em;
 	

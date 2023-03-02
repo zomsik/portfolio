@@ -6,8 +6,6 @@ import Summary from './components/Summary';
 import Navbar from './components/Navbar';
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { animateScroll } from 'react-scroll';
-
 
 const App = () => {
 
